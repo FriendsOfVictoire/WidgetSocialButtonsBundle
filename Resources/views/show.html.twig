@@ -1,7 +1,7 @@
 {% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
 
 {% block content %}
-<ul class="social-container" id="homepage-socialbuttons">
+<ul class="social-container">
     {% for key, item in widget.socialbuttonsItems %}
         {% if preview_mode is defined and preview_mode %}
             <li id="socialbuttons-{{ key }}-container" data-entity-name="{{entity_name}}" data-id="{{entity_id}}" data-entity="{{entity}}">
