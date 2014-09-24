@@ -1,0 +1,19 @@
+services:
+
+    victoire_core.widget_socialbuttons_content_resolver:
+        class: Victoire\Widget\ListingBundle\Resolver\WidgetListingContentResolver
+        parent: victoire_core.widget_listing_content_resolver
+        tags:
+            - { name: victoire_widget.widget_content_resolver, alias: SocialButtons }
+
+    #alias to the entity
+    victoire.widget.socialbuttons:
+        class: Victoire\Widget\SocialButtonsBundle\Entity\WidgetSocialButtons
+        tags:
+            - { name: victoire_cms.theme, widget: listing }
+
+    #alias to the form
+    victoire.widget.form.socialbuttons:
+        class: Victoire\Widget\SocialButtonsBundle\Form\WidgetSocialButtonsType
+        tags:
+            - { name: form.type , alias: victoire_widget_form_socialbuttons }
