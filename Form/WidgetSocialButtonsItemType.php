@@ -61,7 +61,10 @@ class WidgetSocialButtonsItemType extends AbstractType
                         "twitter"   => "Twitter",
                         "viadeo"    => "Viadeo",
                         "youtube"   => "YouTube",
-                        "website"   => "Site web"
+                        "website"   => "Site web",
+                        "email"     => "Email",
+                        "tel"     => "Téléphone",
+                        "location"     => "Localisation",
                 )));
         } else {
             //else, Type class will embed a EntityProxyType for given entity
