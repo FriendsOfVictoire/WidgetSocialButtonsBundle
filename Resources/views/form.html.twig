@@ -19,22 +19,22 @@
     {{ form_end(form) }}
 </div>
 <script type="text/javascript">
-    jQuery(document).ready(function() {
+    $vic(document).ready(function() {
 
         // Disable entity select when we submit the form
-        $('form#{{form.socialbuttonsItems.vars.attr.id}}').on('submit', function(e){
-          $('select.add_{{form.socialbuttonsItems.vars.attr.id}}_link').prop('disabled', true);
+        $vic('form#{{form.socialbuttonsItems.vars.attr.id}}').on('submit', function(e){
+          $vic('select.add_{{form.socialbuttonsItems.vars.attr.id}}_link').prop('disabled', true);
         });
     });
 
-    var collectionHolder = $('ul.vic-items');
+    var collectionHolder = $vic('ul.vic-items');
 
     // ajoute un lien « add a item »
-    var $addItemLink = $('<a href="#" class="vic-btn vic-btn-add" class="vic-btn vic-btn-add add-request-block"><img src="/bundles/victoirecore/images/addWidget-icon.png"> Ajouter un nouvel élément</a>');
+    var $addItemLink = $vic('<a href="#" class="vic-btn vic-btn-add" class="vic-btn vic-btn-add add-request-block"><img src="/bundles/victoirecore/images/addWidget-icon.png"> Ajouter un nouvel élément</a>');
 
-    var $newLinkContainer = $('<li class="vic-col-lg-4 vic-col-lg-offset-8"></li>').append($addItemLink);
+    var $newLinkContainer = $vic('<li class="vic-col-lg-4 vic-col-lg-offset-8"></li>').append($addItemLink);
 
-    jQuery(document).ready(function() {
+    $vic(document).ready(function() {
         // ajoute l'ancre « ajouter un item » et li à la balise ul
         collectionHolder.append($newLinkContainer);
 
@@ -56,13 +56,13 @@
         var newForm = prototype.replace(/__name__/g, collectionHolder.children().length);
 
         // Affiche le formulaire dans la page dans un li, avant le lien "ajouter un tag"
-        var $newFormContainer = $('<li class="vic-col-lg-12 vic-request-block"><div class="vic-panel vic-panel-default"><div class="vic-panel-heading"><span class="vic-circled request-number"></span><button type="button" class="vic-btn vic-btn-remove vic-btn-large vic-pull-right" data-action="remove-block"><i class="fa fa-trash-o"></i></button></div><div id="vic-nl-form" class="vic-panel-body vic-panel-body-request vic-nl-form"></div></div></li>');
+        var $newFormContainer = $vic('<li class="vic-col-lg-12 vic-request-block"><div class="vic-panel vic-panel-default"><div class="vic-panel-heading"><span class="vic-circled request-number"></span><button type="button" class="vic-btn vic-btn-remove vic-btn-large vic-pull-right" data-action="remove-block"><i class="fa fa-trash-o"></i></button></div><div id="vic-nl-form" class="vic-panel-body vic-panel-body-request vic-nl-form"></div></div></li>');
         var currentFormContainer = $newLinkContainer.before($newFormContainer);
-        $('.vic-nl-form', $newFormContainer).append(newForm);
+        $vic('.vic-nl-form', $newFormContainer).append(newForm);
     }
-    $(document).on('click', 'button[data-action="remove-block"]', function(e) {
+    $vic(document).on('click', 'button[data-action="remove-block"]', function(e) {
         e.preventDefault();
-        $(this).parents('li').remove();
+        $vic(this).parents('li').remove();
     });
 </script>
 
