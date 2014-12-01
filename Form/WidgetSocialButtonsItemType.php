@@ -66,7 +66,14 @@ class WidgetSocialButtonsItemType extends AbstractType
                         "email"     => "Email",
                         "tel"       => "Téléphone",
                         "location"  => "Localisation",
-                        )));
+                        )))
+                ->add('analyticsTrackCode', null, array(
+                'label'          => 'form.link_type.analyticsTrackCode.label',
+                'required'       => false,
+                'attr'           => array(
+                    'placeholder' => 'form.link_type.analyticsTrackCode.placeholder',
+                )
+            ));
         } else {
             //else, Type class will embed a EntityProxyType for given entity
             $builder

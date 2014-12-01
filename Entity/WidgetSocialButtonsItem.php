@@ -26,6 +26,13 @@ class WidgetSocialButtonsItem extends WidgetListingItem
     /**
      * @var string
      *
+     * @ORM\Column(name="analytics_track_code", type="string", length=255)
+     */
+    protected $analyticsTrackCode;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="kind", type="string", length=20)
      */
     protected $kind;
@@ -61,6 +68,29 @@ class WidgetSocialButtonsItem extends WidgetListingItem
     public function getUrl()
     {
         return $this->url;
+    }
+
+    /**
+     * Get analyticsTrackCode
+     *
+     * @return string
+     */
+    public function getAnalyticsTrackCode()
+    {
+        return $this->analyticsTrackCode;
+    }
+
+    /**
+     * Set analyticsTrackCode
+     * @param string $analyticsTrackCode
+     *
+     * @return $this
+     */
+    public function setAnalyticsTrackCode($analyticsTrackCode)
+    {
+        $this->analyticsTrackCode = $analyticsTrackCode;
+
+        return $this;
     }
 
     /**
