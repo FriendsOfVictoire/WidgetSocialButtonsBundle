@@ -26,7 +26,7 @@ class WidgetSocialButtonsItem extends WidgetListingItem
     /**
      * @var string
      *
-     * @ORM\Column(name="analytics_track_code", type="string", length=255)
+     * @ORM\Column(name="analytics_track_code", type="string", length=255, nullable=true)
      */
     protected $analyticsTrackCode;
 
