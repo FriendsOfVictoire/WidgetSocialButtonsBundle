@@ -1,5 +1,5 @@
 {
-    "name": "appventus/socialbuttons-widget",
+    "name": "friendsofvictoire/socialbuttons-widget",
     "type": "symfony-bundle",
     "description": "Victoire social buttons widget",
     "keywords": ["victoire", "socialbuttons", "listing"],
@@ -15,7 +15,7 @@
         "php"                      : ">=5.3.3",
         "symfony/framework-bundle" : "~2.3",
         "victoire/victoire"        : "dev-master",
-        "appventus/listing-widget"  : "dev-master"
+        "friendsofvictoire/listing-widget"  : "dev-master"
     },
     "autoload": {
         "psr-0": { "Victoire\\Widget\\SocialButtonsBundle": "" }
