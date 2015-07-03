@@ -7,7 +7,7 @@ Need to add some social buttons/links in your Victoire website ?
 
 If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
 
-#Install the Simple Contact Form Bundle :
+#Install the Social Buttons Bundle :
 
 Run the following composer command :
 
