@@ -21,7 +21,7 @@ class WidgetSocialButtonsType extends WidgetType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $namespace = $options['namespace'];
-        $entityName = $options['entityName'];
+        $businessEntityId = $options['businessEntityId'];
         $mode = $options['mode'];
 
         //choose form mode
@@ -32,7 +32,7 @@ class WidgetSocialButtonsType extends WidgetType
                 'collection',
                 array(
                     'type' => new WidgetSocialButtonsItemType(
-                        $entityName,
+                        $businessEntityId,
                         $namespace,
                         $options['widget']
                     ),
