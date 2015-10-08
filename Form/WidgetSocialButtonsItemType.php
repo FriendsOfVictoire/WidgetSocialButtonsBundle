@@ -43,36 +43,37 @@ class WidgetSocialButtonsItemType extends AbstractType
             //if no entity is given, we generate the static form
             $builder
                 ->add('title', null, array(
-                    'label' => "form.listing.socialButtons.title.label"))
+                    'label' => 'form.listing.socialButtons.title.label'))
                 ->add('url', null, array(
-                    'label' => "form.listing.socialButtons.url.label"))
+                    'label' => 'form.listing.socialButtons.url.label'))
                 ->add('kind', 'choice', array(
-                    'label'   => "form.listing.socialButtons.kind.label",
+                    'label'   => 'form.listing.socialButtons.kind.label',
                     'choices' => array(
                         "blog"      => "Blog",
                         "email"     => "Email",
                         "facebook"  => "Facebook",
+                        "rss"       => 'form.listing.socialButtons.rss.label',
+                        "gplus"     => "Google+",
+                        "linkedin"  => "Linkedin",
                         "flickr"    => "Flickr",
                         "github"    => "Github",
-                        "gplus"     => "Google Plus",
                         "instagram" => "Instagram",
-                        "linkedin"  => "Linkedin",
-                        "location"  => "Localisation",
                         "pinterest" => "Pinterest",
-                        "rss"       => "Flux rss",
-                        "tel"       => "Téléphone",
                         "tumblr"    => "Tumblr",
                         "twitter"   => "Twitter",
                         "viadeo"    => "Viadeo",
                         "vimeo"     => "Vimeo",
-                        "website"   => "Site web",
                         "youtube"   => "YouTube",
+                        "website"   => 'form.listing.socialButtons.website.label',
+                        "tel"       => 'form.listing.socialButtons.phone.label',
+                        "location"  => 'form.listing.socialButtons.location.label',
                         )))
                 ->add('analyticsTrackCode', null, array(
-                'label'          => 'form.link_type.analyticsTrackCode.label',
-                'required'       => false,
-                'attr'           => array(
-                    'placeholder' => 'form.link_type.analyticsTrackCode.placeholder',
+                    'label'          => 'form.link_type.analyticsTrackCode.label',
+                    'required'       => false,
+                    'attr'           => array(
+                    'placeholder'    => 'form.link_type.analyticsTrackCode.placeholder',
+                    'vic_help_block' => 'form.link_type.analyticsTrackCode.help_block',
                 )
             ));
         } else {

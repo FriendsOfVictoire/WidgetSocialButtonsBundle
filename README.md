@@ -1,19 +1,36 @@
-##Victoire DCMS SocialButtons Bundle
+#Victoire DCMS SocialButtons Bundle
 ============
 
-Need to add some social buttons/links in your Victoire website ?
+This bundle installs the Social Buttons Widget on your Victoire project.
+With this widget, you can put some social buttons anywhere linking to your social pages such as
 
-#Set Up Victoire
+* Your Blog
+* Facebook
+* Google+
+* Linkedin
+* Flickr
+* Github
+* Pinterest
+* Tumblr
+* Instagram
+* Twitter
+* Viadeo
+* Vimeo
+* YouTube
+* Any email adress
+* RSS Feed
+
+##Set Up Victoire
 
 If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
 
-#Install the Social Buttons Bundle :
+##Install the SocialButtons Bundle :
 
 Run the following composer command :
 
     php composer.phar require friendsofvictoire/socialbuttons-widget
 
-#Reminder
+##Reminder
 
 Do not forget to add the bundle in your AppKernel !
 
