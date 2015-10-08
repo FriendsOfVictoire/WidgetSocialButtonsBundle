@@ -32,7 +32,31 @@
       </trans-unit>
       <trans-unit resname="form.link_type.analyticsTrackCode.label">
         <source>form.link_type.analyticsTrackCode.label</source>
-        <target>Tracking Code</target>
+        <target>Social interaction analytics</target>
+      </trans-unit>
+      <trans-unit resname="form.link_type.analyticsTrackCode.placeholder">
+        <source>form.link_type.analyticsTrackCode.placeholder</source>
+        <target>insérez votre code ga.js ou universal.js</target>
+      </trans-unit>
+      <trans-unit resname="form.link_type.analyticsTrackCode.help_block">
+        <source>form.link_type.analyticsTrackCode.help_block</source>
+        <target><![CDATA[<a href="http://developers.google.com/analytics/devguides/collection/analyticsjs/social-interactions" target="_blank">comment mesurer les interactions sociales en utilisant analytics.js</a></br><a href="https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingSocial" target="_blank">comment mesurer les interactions sociales en utilisant ga.js</a>]]></target>
+      </trans-unit>
+      <trans-unit resname="form.listing.socialButtons.rss.label">
+        <source>form.listing.socialButtons.rss.label</source>
+        <target>Flux RSS</target>
+      </trans-unit>
+      <trans-unit resname="form.listing.socialButtons.website.label">
+        <source>form.listing.socialButtons.website.label</source>
+        <target>Site web</target>
+      </trans-unit>
+      <trans-unit resname="form.listing.socialButtons.phone.label">
+        <source>form.listing.socialButtons.phone.label</source>
+        <target>téléphone</target>
+      </trans-unit>
+      <trans-unit resname="form.listing.socialButtons.location.label">
+        <source>form.listing.socialButtons.location.label</source>
+        <target>Localisation</target>
       </trans-unit>
     </body>
   </file>
