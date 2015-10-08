@@ -15,6 +15,7 @@ With this widget, you can put some social buttons anywhere linking to your socia
 * Instagram
 * Twitter
 * Viadeo
+* Vimeo
 * YouTube
 * Any email adress
 * RSS Feed
