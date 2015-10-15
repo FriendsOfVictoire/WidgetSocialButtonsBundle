@@ -1,11 +1,12 @@
 <?php
+
 namespace Victoire\Widget\SocialButtonsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Victoire\Widget\ListingBundle\Entity\WidgetListing;
 
 /**
- * ThemeList SocialButtons
+ * ThemeList SocialButtons.
  *
  * @ORM\Table("vic_widget_socialbuttons")
  * @ORM\Entity
@@ -16,12 +17,11 @@ class WidgetSocialButtons extends WidgetListing
      * @var string
      *
      * @ORM\OneToMany(targetEntity="WidgetSocialButtonsItem", mappedBy="socialbuttons", cascade={"persist", "remove"}, orphanRemoval=true)
-     *
      */
     protected $socialbuttonsItems;
 
     /**
-     * Constructor
+     * Constructor.
      */
     public function __construct()
     {
@@ -29,9 +29,10 @@ class WidgetSocialButtons extends WidgetListing
     }
 
     /**
-     * Set socialbuttonsItems
+     * Set socialbuttonsItems.
      *
-     * @param  array         $socialbuttonsItems
+     * @param array $socialbuttonsItems
+     *
      * @return WidgetListing
      */
     public function setSocialButtonsItems($socialbuttonsItems)
@@ -43,10 +44,12 @@ class WidgetSocialButtons extends WidgetListing
 
         return $this;
     }
+
     /**
-     * Add socialbuttonsItems
+     * Add socialbuttonsItems.
      *
-     * @param  \Victoire\Widget\ListingBundle\Entity\WidgetListingItem $socialbuttonsItems
+     * @param \Victoire\Widget\ListingBundle\Entity\WidgetListingItem $socialbuttonsItems
+     *
      * @return WidgetListing
      */
     public function addSocialButtonsItem(WidgetSocialButtonsItem $socialbuttonsItem)
@@ -58,7 +61,7 @@ class WidgetSocialButtons extends WidgetListing
     }
 
     /**
-     * Remove socialbuttonsItems
+     * Remove socialbuttonsItems.
      *
      * @param \Victoire\Widget\ListingBundle\Entity\WidgetListingItem $socialbuttonsItems
      */
@@ -71,7 +74,7 @@ class WidgetSocialButtons extends WidgetListing
     }
 
     /**
-     * Get socialbuttonsItems
+     * Get socialbuttonsItems.
      *
      * @return \Doctrine\Common\Collections\Collection
      */

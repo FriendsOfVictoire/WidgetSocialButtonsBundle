@@ -4,18 +4,19 @@ namespace Victoire\Widget\SocialButtonsBundle\Form;
 
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
-
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
- * WidgetSocialButtonsType form type
+ * WidgetSocialButtonsType form type.
  */
 class WidgetSocialButtonsType extends WidgetType
 {
     /**
-     * define form fields
+     * define form fields.
+     *
      * @param FormBuilderInterface $builder
+     *
      * @param array $options
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
@@ -30,7 +31,7 @@ class WidgetSocialButtonsType extends WidgetType
             $builder->add(
                 'socialbuttonsItems',
                 'collection',
-                array(
+                [
                     'type' => new WidgetSocialButtonsItemType(
                         $businessEntityId,
                         $namespace,
@@ -39,8 +40,8 @@ class WidgetSocialButtonsType extends WidgetType
                     'allow_add'    => true,
                     'allow_delete' => true,
                     'by_reference' => false,
-                    "attr"         => array('id' => 'static')
-                )
+                    'attr'         => ['id' => 'static'],
+                ]
             );
         }
 
@@ -48,22 +49,23 @@ class WidgetSocialButtonsType extends WidgetType
     }
 
     /**
-     * bind form to WidgetRedactor entity
+     * bind form to WidgetRedactor entity.
+     *
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         parent::setDefaultOptions($resolver);
 
-        $resolver->setDefaults(array(
+        $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\SocialButtonsBundle\Entity\WidgetSocialButtons',
             'widget'             => 'themelistingsocialbuttonsitem',
-            'translation_domain' => 'victoire'
-        ));
+            'translation_domain' => 'victoire',
+        ]);
     }
 
     /**
-     * get form name
+     * get form name.
      *
      * @return string The name of the form
      */
