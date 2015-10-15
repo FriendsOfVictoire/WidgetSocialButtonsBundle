@@ -3,18 +3,17 @@
 namespace Victoire\Widget\SocialButtonsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Victoire\Widget\ListingBundle\Entity\WidgetListingItem;
 use Symfony\Component\Validator\Constraints as Assert;
+use Victoire\Widget\ListingBundle\Entity\WidgetListingItem;
 
 /**
- * WidgetSocialButtonsItem
+ * WidgetSocialButtonsItem.
  *
  * @ORM\Table("vic_widget_socialbuttons_items")
  * @ORM\Entity
  */
 class WidgetSocialButtonsItem extends WidgetListingItem
 {
-
     /**
      * @var string
      *
@@ -42,12 +41,11 @@ class WidgetSocialButtonsItem extends WidgetListingItem
      *
      * @ORM\ManyToOne(targetEntity="WidgetSocialButtons", inversedBy="socialbuttonsItems")
      * @ORM\JoinColumn(name="listing_id", referencedColumnName="id", onDelete="CASCADE")
-     *
      */
     protected $socialbuttons;
 
     /**
-     * Set url
+     * Set url.
      *
      * @param string $url
      *
@@ -61,7 +59,7 @@ class WidgetSocialButtonsItem extends WidgetListingItem
     }
 
     /**
-     * Get url
+     * Get url.
      *
      * @return string
      */
@@ -71,7 +69,7 @@ class WidgetSocialButtonsItem extends WidgetListingItem
     }
 
     /**
-     * Get analyticsTrackCode
+     * Get analyticsTrackCode.
      *
      * @return string
      */
@@ -81,7 +79,8 @@ class WidgetSocialButtonsItem extends WidgetListingItem
     }
 
     /**
-     * Set analyticsTrackCode
+     * Set analyticsTrackCode.
+     *
      * @param string $analyticsTrackCode
      *
      * @return $this
@@ -94,7 +93,7 @@ class WidgetSocialButtonsItem extends WidgetListingItem
     }
 
     /**
-     * Set kind
+     * Set kind.
      *
      * @param string $kind
      *
@@ -108,7 +107,7 @@ class WidgetSocialButtonsItem extends WidgetListingItem
     }
 
     /**
-     * Get kind
+     * Get kind.
      *
      * @return string
      */
@@ -118,7 +117,7 @@ class WidgetSocialButtonsItem extends WidgetListingItem
     }
 
     /**
-     * Get fields
+     * Get fields.
      *
      * @return string
      */
@@ -128,9 +127,10 @@ class WidgetSocialButtonsItem extends WidgetListingItem
     }
 
     /**
-     * Set socialbuttons
+     * Set socialbuttons.
      *
-     * @param  WidgetSocialButtons     $socialbuttons
+     * @param WidgetSocialButtons $socialbuttons
+     *
      * @return WidgetSocialButtonsItem
      */
     public function setSocialButtons($socialbuttons)
@@ -141,7 +141,7 @@ class WidgetSocialButtonsItem extends WidgetListingItem
     }
 
     /**
-     * Get socialbuttons
+     * Get socialbuttons.
      *
      * @return string
      */
@@ -149,5 +149,4 @@ class WidgetSocialButtonsItem extends WidgetListingItem
     {
         return $this->socialbuttons;
     }
-
 }
