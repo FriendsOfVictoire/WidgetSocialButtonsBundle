@@ -30,7 +30,7 @@ Run the following composer command :
 
     php composer.phar require friendsofvictoire/socialbuttons-widget
 
-##Reminder
+###Reminder
 
 Do not forget to add the bundle in your AppKernel !
 
