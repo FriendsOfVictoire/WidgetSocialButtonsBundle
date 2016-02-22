@@ -2,8 +2,9 @@
 
 namespace Victoire\Widget\SocialButtonsBundle\Form;
 
+use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
@@ -21,22 +22,16 @@ class WidgetSocialButtonsType extends WidgetType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $namespace = $options['namespace'];
-        $businessEntityId = $options['businessEntityId'];
-        $mode = $options['mode'];
-
         //choose form mode
-        if ($mode === Widget::MODE_STATIC) {
+        if ($options['mode'] === Widget::MODE_STATIC) {
             //if no entity is given, we generate the static form
-            $builder->add(
-                'socialbuttonsItems',
-                'collection',
-                [
-                    'type' => new WidgetSocialButtonsItemType(
-                        $businessEntityId,
-                        $namespace,
-                        $options['widget']
-                    ),
+            $builder->add('socialbuttonsItems', CollectionType::class, [
+                    'entry_type' => WidgetSocialButtonsItemType::class,
+                    'entry_options' => [
+                        'businessEntityId' => $options['businessEntityId'],
+                        'namespace'        => $options['namespace'],
+                        'widget'           => $options['widget']
+                    ],
                     'allow_add'    => true,
                     'allow_delete' => true,
                     'by_reference' => false,
@@ -49,28 +44,16 @@ class WidgetSocialButtonsType extends WidgetType
     }
 
     /**
-     * bind form to WidgetRedactor entity.
-     *
-     * @param OptionsResolverInterface $resolver
+     * {@inheritdoc}
      */
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(OptionsResolver $resolver)
     {
-        parent::setDefaultOptions($resolver);
+        parent::configureOptions($resolver);
 
         $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\SocialButtonsBundle\Entity\WidgetSocialButtons',
             'widget'             => 'themelistingsocialbuttonsitem',
             'translation_domain' => 'victoire',
         ]);
-    }
-
-    /**
-     * get form name.
-     *
-     * @return string The name of the form
-     */
-    public function getName()
-    {
-        return 'victoire_widget_form_socialbuttons';
     }
 }

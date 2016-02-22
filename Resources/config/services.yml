@@ -6,14 +6,10 @@ services:
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: SocialButtons }
 
-    #alias to the entity
     victoire.widget.socialbuttons:
         class: Victoire\Widget\SocialButtonsBundle\Entity\WidgetSocialButtons
-        tags:
-            - { name: victoire_cms.theme, widget: listing }
 
-    #alias to the form
     victoire.widget.form.socialbuttons:
         class: Victoire\Widget\SocialButtonsBundle\Form\WidgetSocialButtonsType
         tags:
-            - { name: form.type , alias: victoire_widget_form_socialbuttons }
+            - { name: form.type }
