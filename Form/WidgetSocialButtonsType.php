@@ -26,11 +26,11 @@ class WidgetSocialButtonsType extends WidgetType
         if ($options['mode'] === Widget::MODE_STATIC) {
             //if no entity is given, we generate the static form
             $builder->add('socialbuttonsItems', CollectionType::class, [
-                    'entry_type' => WidgetSocialButtonsItemType::class,
+                    'entry_type'    => WidgetSocialButtonsItemType::class,
                     'entry_options' => [
                         'businessEntityId' => $options['businessEntityId'],
                         'namespace'        => $options['namespace'],
-                        'widget'           => $options['widget']
+                        'widget'           => $options['widget'],
                     ],
                     'allow_add'    => true,
                     'allow_delete' => true,

@@ -2,11 +2,11 @@
 
 namespace Victoire\Widget\SocialButtonsBundle\Form;
 
-use Victoire\Bundle\CoreBundle\Form\WidgetType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Victoire\Bundle\CoreBundle\Form\EntityProxyFormType;
+use Victoire\Bundle\CoreBundle\Form\WidgetType;
 
 class WidgetSocialButtonsItemType extends WidgetType
 {
@@ -21,7 +21,7 @@ class WidgetSocialButtonsItemType extends WidgetType
     {
         //choose form mode
         if (!empty($options['businessEntityId']) || $options['businessEntityId'] === null) {
-                    //if no entity is given, we generate the static form
+            //if no entity is given, we generate the static form
             $builder
                 ->add('title', null, [
                     'label' => 'form.listing.socialButtons.title.label', ])
@@ -66,8 +66,8 @@ class WidgetSocialButtonsItemType extends WidgetType
                 ->add('position')
                 ->add('entity', EntityProxyFormType::class, [
                     'business_entity_id' => $options['businessEntityId'],
-                    'namespace'   => $options['namespace'],
-                    'widget'      => $options['widget'],
+                    'namespace'          => $options['namespace'],
+                    'widget'             => $options['widget'],
                 ]);
         }
     }
