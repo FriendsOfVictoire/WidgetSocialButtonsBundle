@@ -1,0 +1,12 @@
+{
+  "require_all":
+  {
+    "stylesheets":
+    {
+      "head":
+      [
+        "@VictoireWidgetSocialButtonsBundle/Resources/public/style/socialButtons.css"
+      ]
+    }
+  }
+}
