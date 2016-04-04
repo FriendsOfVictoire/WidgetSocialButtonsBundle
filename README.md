@@ -10,7 +10,9 @@ With this widget, you can put some social buttons anywhere linking to your socia
 * Linkedin
 * Flickr
 * Github
+* Periscope
 * Pinterest
+* Slideshare
 * Tumblr
 * Instagram
 * Twitter
