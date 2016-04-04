@@ -2,13 +2,13 @@
 
 namespace Victoire\Widget\SocialButtonsBundle\Form;
 
-use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Victoire\Bundle\CoreBundle\Form\EntityProxyFormType;
+use Victoire\Bundle\CoreBundle\Form\WidgetType;
 
-class WidgetSocialButtonsItemType extends AbstractType
+class WidgetSocialButtonsItemType extends WidgetType
 {
     /**
      * define form fields.
@@ -20,7 +20,7 @@ class WidgetSocialButtonsItemType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         //choose form mode
-        if (!empty($options['entity_name'])) {
+        if (!empty($options['businessEntityId']) || $options['businessEntityId'] === null) {
             //if no entity is given, we generate the static form
             $builder
                 ->add('title', null, [
@@ -39,7 +39,9 @@ class WidgetSocialButtonsItemType extends AbstractType
                         'Flickr'                                    => 'flickr',
                         'Github'                                    => 'github',
                         'Instagram'                                 => 'instagram',
+                        'Periscope'                                 => 'periscope',
                         'Pinterest'                                 => 'pinterest',
+                        'Slideshare'                                => 'slideshare',
                         'Tumblr'                                    => 'tumblr',
                         'Twitter'                                   => 'twitter',
                         'Viadeo'                                    => 'viadeo',
@@ -63,9 +65,9 @@ class WidgetSocialButtonsItemType extends AbstractType
             $builder
                 ->add('position')
                 ->add('entity', EntityProxyFormType::class, [
-                    'entity_name' => $options['entity_name'],
-                    'namespace'   => $options['namespace'],
-                    'widget'      => $options['widget'],
+                    'business_entity_id' => $options['businessEntityId'],
+                    'namespace'          => $options['namespace'],
+                    'widget'             => $options['widget'],
                 ]);
         }
     }

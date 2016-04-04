@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'fontawesomeperiscope';
+    src: url('../../../bundles/victoirewidgetsocialbuttons/fonts/fontawesomeperiscope.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.fa-periscope:before {
+    font-family: 'fontawesomeperiscope' !important;
+    content: "\e900";
+}
