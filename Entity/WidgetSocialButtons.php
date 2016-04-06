@@ -25,6 +25,7 @@ class WidgetSocialButtons extends WidgetListing
      */
     public function __construct()
     {
+        parent::__construct();
         $this->socialbuttonsItems = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
