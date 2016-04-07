@@ -78,7 +78,6 @@ class WidgetSocialButtonsItemType extends AbstractType
      */
     public function configureOptions(OptionsResolver $resolver)
     {
-
         $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\SocialButtonsBundle\Entity\WidgetSocialButtonsItem',
             'widget'             => null,
