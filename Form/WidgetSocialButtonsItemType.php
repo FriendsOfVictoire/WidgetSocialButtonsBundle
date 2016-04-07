@@ -51,6 +51,7 @@ class WidgetSocialButtonsItemType extends AbstractType
                         'form.listing.socialButtons.phone.label'    => 'tel',
                         'form.listing.socialButtons.location.label' => 'location',
                         ],
+                    'choices_as_values' => true,
                 ])
                 ->add('analyticsTrackCode', null, [
                     'label'          => 'form.link_type.analyticsTrackCode.label',
@@ -77,7 +78,6 @@ class WidgetSocialButtonsItemType extends AbstractType
      */
     public function configureOptions(OptionsResolver $resolver)
     {
-
         $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\SocialButtonsBundle\Entity\WidgetSocialButtonsItem',
             'widget'             => null,
