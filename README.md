@@ -19,6 +19,7 @@ With this widget, you can put some social buttons anywhere linking to your socia
 * Viadeo
 * Vimeo
 * YouTube
+* Behance
 * Any email adress
 * RSS Feed
 
