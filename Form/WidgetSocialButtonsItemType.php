@@ -47,6 +47,7 @@ class WidgetSocialButtonsItemType extends AbstractType
                         'Viadeo'                                    => 'viadeo',
                         'Vimeo'                                     => 'vimeo',
                         'YouTube'                                   => 'youtube',
+                        'Behance'                                   => 'behance',
                         'form.listing.socialButtons.website.label'  => 'website',
                         'form.listing.socialButtons.phone.label'    => 'tel',
                         'form.listing.socialButtons.location.label' => 'location',
