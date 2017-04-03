@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "victoire/victoire": "~2",
+        "victoire/victoire": "~2|~3.0",
         "friendsofvictoire/listing-widget": "~2"
     },
     "autoload": {
