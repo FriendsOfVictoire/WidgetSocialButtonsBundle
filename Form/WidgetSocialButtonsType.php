@@ -29,7 +29,6 @@ class WidgetSocialButtonsType extends WidgetType
                     'entry_type'    => WidgetSocialButtonsItemType::class,
                     'entry_options' => [
                         'businessEntityId' => $options['businessEntityId'],
-                        'namespace'        => $options['namespace'],
                         'widget'           => $options['widget'],
                     ],
                     'allow_add'    => true,

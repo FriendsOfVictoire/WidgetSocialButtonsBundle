@@ -68,7 +68,6 @@ class WidgetSocialButtonsItemType extends AbstractType
                 ->add('position')
                 ->add('entity', EntityProxyFormType::class, [
                     'business_entity_id' => $options['businessEntityId'],
-                    'namespace'          => $options['namespace'],
                     'widget'             => $options['widget'],
                 ]);
         }
@@ -88,7 +87,6 @@ class WidgetSocialButtonsItemType extends AbstractType
         $resolver->setDefined([
             'widget',
             'mode',
-            'namespace',
             'businessEntityId',
         ]);
     }
