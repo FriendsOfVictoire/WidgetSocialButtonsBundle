@@ -6,55 +6,55 @@
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
     </header>
     <body>
-      <trans-unit id="7c274dc63876be15e5bbafb68070ccf04ba9910b" resname="widget.socialbuttons.new.action.label">
+      <trans-unit id="1" resname="widget.socialbuttons.new.action.label">
         <source>widget.socialbuttons.new.action.label</source>
         <target>Botones sociales</target>
       </trans-unit>
-      <trans-unit resname="widget.form.theme.socialbuttons">
+      <trans-unit id="2" resname="widget.form.theme.socialbuttons">
         <source>widget.form.theme.socialbuttons</source>
         <target>Botones sociales</target>
       </trans-unit>
-      <trans-unit resname="modal.form.widget.type.socialbuttons.label">
+      <trans-unit id="3" resname="modal.form.widget.type.socialbuttons.label">
         <source>modal.form.widget.type.socialbuttons.label</source>
         <target>Botones sociales</target>
       </trans-unit>
-      <trans-unit resname="form.listing.socialButtons.title.label">
+      <trans-unit id="4" resname="form.listing.socialButtons.title.label">
         <source>form.listing.socialButtons.title.label</source>
         <target>Título</target>
       </trans-unit>
-      <trans-unit resname="form.listing.socialButtons.kind.label">
+      <trans-unit id="5" resname="form.listing.socialButtons.kind.label">
         <source>form.listing.socialButtons.kind.label</source>
         <target>Tipo</target>
       </trans-unit>
-      <trans-unit resname="form.listing.socialButtons.url.label">
+      <trans-unit id="6" resname="form.listing.socialButtons.url.label">
         <source>form.listing.socialButtons.url.label</source>
         <target>Vínculo</target>
       </trans-unit>
-      <trans-unit resname="form.link_type.analyticsTrackCode.label">
+      <trans-unit id="7" resname="form.link_type.analyticsTrackCode.label">
         <source>form.link_type.analyticsTrackCode.label</source>
         <target>Social interaction analytics</target>
       </trans-unit>
-      <trans-unit resname="form.link_type.analyticsTrackCode.placeholder">
+      <trans-unit id="8" resname="form.link_type.analyticsTrackCode.placeholder">
         <source>form.link_type.analyticsTrackCode.placeholder</source>
         <target>inserte su código ga.js o universal.js</target>
       </trans-unit>
-      <trans-unit resname="form.link_type.analyticsTrackCode.help_block">
+      <trans-unit id="9" resname="form.link_type.analyticsTrackCode.help_block">
         <source>form.link_type.analyticsTrackCode.help_block</source>
         <target><![CDATA[<a href="http://developers.google.com/analytics/devguides/collection/analyticsjs/social-interactions" target="_blank">cómo medir las interacciones sociales utilizando analytics.js</a></br><a href="https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingSocial" target="_blank">cómo medir las interacciones sociales utilizando ga.js</a>]]></target>
       </trans-unit>
-      <trans-unit resname="form.listing.socialButtons.rss.label">
+      <trans-unit id="10" resname="form.listing.socialButtons.rss.label">
         <source>form.listing.socialButtons.rss.label</source>
         <target>Canal RSS</target>
       </trans-unit>
-      <trans-unit resname="form.listing.socialButtons.website.label">
+      <trans-unit id="11" resname="form.listing.socialButtons.website.label">
         <source>form.listing.socialButtons.website.label</source>
         <target>Sitio Web</target>
       </trans-unit>
-      <trans-unit resname="form.listing.socialButtons.phone.label">
+      <trans-unit id="12" resname="form.listing.socialButtons.phone.label">
         <source>form.listing.socialButtons.phone.label</source>
         <target>Teléfono</target>
       </trans-unit>
-      <trans-unit resname="form.listing.socialButtons.location.label">
+      <trans-unit id="13" resname="form.listing.socialButtons.location.label">
         <source>form.listing.socialButtons.location.label</source>
         <target>Localización</target>
       </trans-unit>
